@@ -24,10 +24,10 @@ void main() async {
     options: DefaultFirebaseOptions.currentPlatform,
   );
   await setupFlutterNotifications();
-  FirebaseMessaging.onBackgroundMessage(firebaseMessagingBackgroundHandler);
-  firebaseMessagingForgroundHandler();
-  String? fcmToken = await FirebaseMessaging.instance.getToken();
-  debugPrint("FCM Token: $fcmToken");
+  // FirebaseMessaging.onBackgroundMessage(firebaseMessagingBackgroundHandler);
+  // firebaseMessagingForgroundHandler();
+  // String? fcmToken = await FirebaseMessaging.instance.getToken();
+  // debugPrint("FCM Token: $fcmToken");
   await FlutterDownloader.initialize(
     debug: true,
     ignoreSsl: false,
